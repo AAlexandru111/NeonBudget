@@ -1,10 +1,20 @@
 export default (state, action) => {
-    switch (action.type) {
-      case 'DELETE_TRANSACTION':
-          return state.filter((transaction) => transaction.id !== action.payload);
-      case 'ADD_TRANSACTION':
-          return  [...state, action.payload];
-      default:
-        return state;
-    }
-  };
+  let transactions;
+
+switch (action.type) {
+  case 'DELETE_TRANSACTION':
+      transactions = state.filter((transaction) => transaction.id !== action.payload);
+
+      localStorage.setItem('transactions', JSON.stringify(transactions));
+
+      return transactions;
+  case 'ADD_TRANSACTION':
+      transactions = [...state, action.payload]
+
+      localStorage.setItem('transactions', JSON.stringify(transactions));
+
+      return transactions;
+  default:
+    return state;
+}
+};
