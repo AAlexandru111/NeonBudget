@@ -12,6 +12,10 @@ export default makeStyles((theme) => ({
       boxShadow: "0 16px 70px -12.125px rgb(0 255 0 / 0.7);"
     }
   },
+  "&.MuiCardHeader-title": {
+    fontSize:  "150px",
+    
+  },
   expand: {
     transform: 'rotate(0deg)',
     marginLeft: 'auto',
