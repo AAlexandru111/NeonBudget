@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, {  useContext } from 'react';
 import { List as MUIList, ListItem, ListItemAvatar, Avatar, ListItemText, ListItemSecondaryAction, IconButton } from '@material-ui/core';
 import { Delete, MoneyOff } from '@material-ui/icons';
 
@@ -18,7 +18,7 @@ const List = () => {
               <MoneyOff />
             </Avatar>
           </ListItemAvatar>
-          <ListItemText primary={`${transaction.title} - ${transaction.category}`} secondary={transaction.amount} />
+          <ListItemText primary={transaction.category} secondary={`$${transaction.amount} - ${transaction.date}`} />
           <ListItemSecondaryAction>
             <IconButton edge="end" aria-label="delete" onClick={() => deleteTransaction(transaction.id)}>
               <Delete />
