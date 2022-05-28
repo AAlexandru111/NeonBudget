@@ -9,7 +9,6 @@
     "@material-ui/icons": "^4.11.3",
     "@material-ui/lab": "^4.0.0-alpha.61",
     "@mui/material": "^5.8.1",
-    "@speechly/browser-client": "^2.1.0",
     "@speechly/react-client": "^2.0.1",
     "@speechly/react-ui": "^2.6.2",
     "@testing-library/jest-dom": "^5.16.4",

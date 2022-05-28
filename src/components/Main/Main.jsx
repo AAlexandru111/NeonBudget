@@ -13,7 +13,7 @@ const ExpenseTracker = () => {
 
   return (
     <Card className={classes.root}>
-      <CardHeader className={classes.cardHeader} title="Neon Budget" subheader="Voice powered" />
+      <CardHeader className={classes.cardHeader} title="Neon Budget" subheader="Voice powered by Speechly" />
       <CardContent>
         <Typography align="center" variant="h5">Total Balance ${balance}</Typography>
         <Typography variant="subtitle1" style={{ lineHeight: '1.5em', marginTop: '20px' }}>
