@@ -2,7 +2,6 @@ import React, { useState, useEffect, useContext } from 'react';
 import { Card, CardHeader, CardContent, Typography, Grid, Divider } from '@material-ui/core';
 import { useSpeechContext } from '@speechly/react-client';
 import { ExpenseTrackerContext } from '../../context/context';
-import { keyframes } from '@mui/system';
 import useStyles from './styles';
 import Form from './Form/Form';
 import List from './List/List';
@@ -14,11 +13,7 @@ const ExpenseTracker = () => {
 
   return (
     <Card className={classes.root}>
-      <CardHeader className={classes.cardHeader} title="Neon Budget" subheader="Voice powered by Speechly" titleTypographyProps={{
-        classes: {
-          root: classes.cardHeaderTitleRoot,
-        }
-      }} />
+      <CardHeader className={classes.cardHeader} title="Neon Budget" subheader="Voice powered by Speechly"/>
       <CardContent>
         <Typography align="center" variant="h5">Total Balance ${balance}</Typography>
         <Typography variant="subtitle1" style={{ lineHeight: '1.5em', marginTop: '20px' }}>
