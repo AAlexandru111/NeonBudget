@@ -1,15 +1,11 @@
 import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles((theme) => ({
-  '@keyframes animate': {
-    from:{
-      textShadow: `0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de,
-        0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de`,
-    },
-    to:{
-      textShadow: `0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de,
-        0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de`,
-    }
+  '@keyframes glow': {
+    "0%,100%": { textShadow:`0 0 30px #02D785` },
+    "25%":{ textShadow:`0 0 30px orange` },
+    "50%":{ textShadow:`0 0 30px forestgreen` },
+    "75%":{ textShadow:`0 0 30px yellow` },
   },
   '@keyframes neon': {
     "0%": {
@@ -25,63 +21,29 @@ export default makeStyles((theme) => ({
       color: '#806914',
     }
   },
-  '@keyframes flux': {
-    "0%": {
-      textShadow: `0vw 0vw 1vw #1041FF, 0vw 0vw 3vw #1041FF, 0vw 0vw 10vw #1041FF, 0vw 0vw 10vw #1041FF, 0vw 0vw .4vw #8BFDFE, .5vw .5vw .1vw #147280`,
-      color: "#28D7FE",
-    },
-    "100%": {
-      textShadow: `0vw 0vw 1vw #1041FF, 0vw 0vw 3vw #1041FF, 0vw 0vw 10vw #1041FF, 0vw 0vw 10vw #1041FF, 0vw 0vw .4vw #8BFDFE, .5vw .5vw .1vw #147280`,
-      color: "#28D7FE",
-    },
-    "50%": {
-      textShadow: `0vw 0vw .5vw #082180, 0vw 0vw 1.5vw #082180, 0vw 0vw 5vw #082180, 0vw 0vw 5vw #082180, 0vw 0vw .2vw #082180, .5vw .5vw .1vw #0A3940`,
-      color: "#146C80",
-    }
-  },
-  '@keyframes flicker': {
-    "50%": {
-      color: 'white',
-      filter: 'saturate(200%) hue-rotate(20deg)',
-    }
-  },
   media: {
     height: 0,
     paddingTop: '56.25%', // 16:9
   },
   cardHeader: {
-    //work with this
-    // backgroundColor: 'grey',
     borderBottom: '10px solid rgba(255, 99, 71, 0.7)',
-    // boxShadow: "0 8px 40px -12px rgb(0 255 0 / 0.7);",
-    // "&:hover": {
-    //   boxShadow: "0 16px 70px -12.125px rgb(0 255 0 / 0.7);"
-    // },
     textAlign: 'center',
     
-    // animation: `$animate 1.5s ease-in-out infinite alternate`,
     '& .MuiCardHeader-title': {
       fontFamily: 'Bebas Neue',
       fontSize: '3vw',
-      // textShadow: '0 0 3vw #F40A35',    
-      // color: '#FB4264',
-      // animation: `$neon 1s ease infinite`,
-      // --interval: '1s',
-      color: 'tomato',
-      textShadow: 
-        `0 0 10px var(orangered),
-        0 0 20px var(firebrick),
-        0 0 40px var(maroon),
-        0 0 80px var(darkred)`,
-      // willChange: 'filter, color',
+      animation: `$neon 4s ease infinite`,
+      color: '#FED128',
+      textShadow: `0vw 0vw 1vw #FA1C16, 0vw 0vw 3vw #FA1C16, 0vw 0vw 10vw #FA1C16, 0vw 0vw 10vw #FA1C16, 0vw 0vw .4vw #FED128, .5vw .5vw .1vw #806914`,
       filter: 'saturate(60%)',
-      // animation: `$flicker steps(100) 1s 1s infinite`,
+      background: '#CA4246',
+      backgroundColor: '#CA4246',
     },
     '& .MuiCardHeader-subheader': {
       fontFamily: 'Bebas Neue',
       fontSize: '1.5vw',
-      // animation: `$flux 2s linear infinite`,
       textShadow: '0vw 0vw 3vw #2356FF',
+      // animation: `$glow 10s ease-in-out infinite`,
     },
   },
   expand: {

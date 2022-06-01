@@ -8,11 +8,11 @@ export default makeStyles(() => ({
   },
   button: {
     border: "none",
-    color: "#ff9aff",
-    boxShadow: "0 0 5px #ef97e8",
+    color: "#ff6347",
+    boxShadow: "0 0 5px #ff6347",
     // transition: "all 0.3s ease",
     "&:hover" : {
-      boxShadow: "0 0 10px #ef97e8, 0 0 20px #ef97e8, 0 0 20px #fff inset",
+      boxShadow: "0 0 10px #4CAF50, 0 0 20px #4CAF50, 0 0 20px #fff inset",
     },
   },
 }));
