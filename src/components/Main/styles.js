@@ -52,16 +52,16 @@ export default makeStyles((theme) => ({
   cardHeader: {
     //work with this
     // backgroundColor: 'grey',
-    borderBottom: '10px solid rgba(0, 255, 0, 0.5)',
-    boxShadow: "0 8px 40px -12px rgb(0 255 0 / 0.7);",
-    "&:hover": {
-      boxShadow: "0 16px 70px -12.125px rgb(0 255 0 / 0.7);"
-    },
+    borderBottom: '10px solid rgba(255, 99, 71, 0.7)',
+    // boxShadow: "0 8px 40px -12px rgb(0 255 0 / 0.7);",
+    // "&:hover": {
+    //   boxShadow: "0 16px 70px -12.125px rgb(0 255 0 / 0.7);"
+    // },
     textAlign: 'center',
     
     // animation: `$animate 1.5s ease-in-out infinite alternate`,
     '& .MuiCardHeader-title': {
-      fontFamily: 'Bangers',
+      fontFamily: 'Bebas Neue',
       fontSize: '3vw',
       // textShadow: '0 0 3vw #F40A35',    
       // color: '#FB4264',
@@ -75,11 +75,11 @@ export default makeStyles((theme) => ({
         0 0 80px var(darkred)`,
       // willChange: 'filter, color',
       filter: 'saturate(60%)',
-      animation: `$flicker steps(100) 1s 1s infinite`,
+      // animation: `$flicker steps(100) 1s 1s infinite`,
     },
     '& .MuiCardHeader-subheader': {
-      fontFamily: 'Bangers',
-      fontSize: '2vw',
+      fontFamily: 'Bebas Neue',
+      fontSize: '1.5vw',
       // animation: `$flux 2s linear infinite`,
       textShadow: '0vw 0vw 3vw #2356FF',
     },
