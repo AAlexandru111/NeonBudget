@@ -38,5 +38,11 @@ To create a transaction using the voice capabilities, simply hold the spacebar o
 
 ## Screenshots
 
+<img width="1238" alt="SS1" src="https://user-images.githubusercontent.com/83639928/171524222-998331fd-15fb-4701-af6a-c072ed1b4bc3.png">
+
+<img width="1232" alt="SS2" src="https://user-images.githubusercontent.com/83639928/171524238-30b3ebd0-154e-4dcb-b7c4-37a5ac688ee4.png">
+
+
+
 
 
