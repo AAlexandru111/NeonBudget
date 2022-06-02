@@ -31,7 +31,9 @@ If the transaction was succesfully registered, it will be appear in the list bel
 You can collapse any transaction category from the charts by clicking on the category title. 
 
 To create a transaction using the voice capabilities, simply hold the spacebar or the microphone button on the page and say something like:
+
 "Add INCOME for 50 dollars in category BUSINESS for next Monday."
+
 "Add 50 INCOME in BUSINESS next Monday."
 
 ## Screenshots
